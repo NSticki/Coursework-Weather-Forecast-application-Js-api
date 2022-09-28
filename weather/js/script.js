@@ -1,5 +1,5 @@
 const link =
-  "http://api.weatherstack.com/current?access_key=3983935ed0f8f5622c3c7ecae608df37";
+  "http://api.weatherstack.com/current?access_key=a1f9967bd84999b58819a1fc2d839a29";
 
 
 const root = document.getElementById("root");
@@ -127,15 +127,19 @@ const getImage = (description) => {
 
   switch (value) {
     case "partly cloudy":
-      return "partly.png";
+      return "partly cloudy.gif";
+    case "light drizzle":
+      return "do.gif";
     case "cloud":
-      return "cloud.png";
+      return "cloudy.gif";
+    case "rain":
+      return "rain.gif";
     case "fog":
-      return "fog.png";
+      return "fog.gif";
     case "sunny":
-      return "sunny.png";
-    case "cloud":
-      return "cloud.png";
+      return "sunny.gif";
+    case "heavy snow":
+      return "snow.gif";
     default:
       return "the.png";
   }
